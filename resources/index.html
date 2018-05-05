@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Chrome extension download tool</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/crxdl.css" />
+</head>
+
+<body>
+
+	<div id="particles-js"></div>
+	<ul class="cb-slideshow">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<div class="container-fluid">
+		<div class="row cb-slideshow-text-container ">
+			<div class="tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+				<header class="mb-5">
+					<h1>CrxDL</h1>
+				</header>
+				<P class="mb-5">A simple Chrome extension offline download tool.</P>
+
+				<form action="/crxdl" method="get" class="subscribe-form">
+					<div class="row form-section">
+
+						<div class="col-md-7 col-sm-7 col-xs-7">
+							<input name="crxid" type="text" class="form-control" id="contact_email" placeholder="Extension ID..." required/>
+						</div>
+						<div class="col-md-5 col-sm-5 col-xs-5">
+							<button type="submit" class="tm-btn-subscribe">Download</button>
+						</div>
+
+					</div>
+				</form>
+
+				<div class="tm-social-icons-container text-xs-center">
+					<a href="https://mritd.me" class="tm-social-link">
+						<i class="fa fa-firefox"></i>
+					</a>
+					<a href="https://plus.google.com/u/0/+%E6%BC%A0%E7%84%B6" class="tm-social-link">
+						<i class="fa fa-google-plus"></i>
+					</a>
+					<a href="https://twitter.com/mritd1234" class="tm-social-link">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="https://t.me/mritd" class="tm-social-link">
+						<i class="fa fa-telegram"></i>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer-link">
+			<p>Copyright © 2018
+				<a href="https://mritd.me">mritd</a>
+			</p>
+			<p>A simple chrome crx download tool</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</html>
