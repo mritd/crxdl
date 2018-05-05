@@ -1,0 +1,14 @@
+hash: faf554c42330d14a38d14598e796e3ffa059edfbf315bffb3a529830ebbb9286
+updated: 2018-05-05T17:31:07.545424+08:00
+imports:
+- name: github.com/gobuffalo/packr
+  version: 7f4074995d431987caaa35088199f13c44b24440
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/pkg/errors
+  version: 816c9085562cd7ee03e7f8188a1cfd942858cded
+- name: github.com/spf13/cobra
+  version: a1f051bc3eba734da4772d60e2d677f47cf93ef4
+- name: github.com/spf13/pflag
+  version: ee5fd03fd6acfd43e44aea0b4135958546ed8e73
+testImports: []

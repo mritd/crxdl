@@ -1,0 +1,6 @@
+package: github.com/mritd/crxdl
+import:
+- package: github.com/gobuffalo/packr
+  version: ^1.11.0
+- package: github.com/spf13/cobra
+  version: ^0.0.2
