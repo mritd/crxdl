@@ -102,9 +102,13 @@ func dlServer(w http.ResponseWriter, req *http.Request) {
 		ExtensionID: crxid,
 	}
 	buf := dl.Download()
-	w.Header().Set("Content-Type", "application/octet-stream")
-	w.Header().Set("content-disposition", "attachment; filename=\""+dl.ExtensionID+".crx\"")
-	io.Copy(w, bytes.NewReader(buf))
+	if len(buf) == 0 {
+		fmt.Fprint(w, "Extension not found!")
+	} else {
+		w.Header().Set("Content-Type", "application/octet-stream")
+		w.Header().Set("content-disposition", "attachment; filename=\""+dl.ExtensionID+".crx\"")
+		io.Copy(w, bytes.NewReader(buf))
+	}
 
 }
 

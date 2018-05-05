@@ -51,11 +51,14 @@ func (dl Downloader) Download() []byte {
 	if err != nil {
 		fmt.Printf("Dwonload %s failed!\n", dl.ExtensionID)
 		fmt.Println(err)
-	} else {
-		fmt.Printf("Dwonload %s success!\n", dl.ExtensionID)
-		buf, err = ioutil.ReadAll(resp.Body)
-		utils.CheckAndExit(err)
+	} else if resp.StatusCode != http.StatusOK {
+		fmt.Printf("Extension %s not found!\n", dl.ExtensionID)
+		return buf
 	}
+
+	fmt.Printf("Dwonload %s success!\n", dl.ExtensionID)
+	buf, err = ioutil.ReadAll(resp.Body)
+	utils.CheckAndExit(err)
 
 	return buf
 
